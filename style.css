@@ -542,12 +542,15 @@ button.contact-btn{
 }
 .resume-contents .box h4{
 	font-weight: 600;
-	position: relative;
-	color: var(--secondary-heading);
+    position: relative;
+    color: var(--secondary-heading);
+    display: list-item;
+    margin-block-start: 1em;
 }
 
 .box h4 span{
 	font-weight: 500;
+	display: inline;
 }
 
 .resume-contents .box h3{
