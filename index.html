@@ -85,53 +85,34 @@
 			</span>
 		</div>
 
+		<div class="career-item">
+			<span class="icon"><i class="fa fa-users"></i></span>
+			<span class="career-desc">
+				<h2><span id="unique-visitors">0</span>+ Followers</h2>
+				<p>Total Visitors</p>
+			</span>
+		</div>
+		
 		<script>
-			// Function to get and set a cookie value
-			function getCookie(name) {
-				const value = `; ${document.cookie}`;
-				const parts = value.split(`; ${name}=`);
-				if (parts.length === 2) return parts.pop().split(';').shift();
+			// Function to update the visitor count
+			function updateVisitorCount() {
+				// Get the current visitor count from the element with id "unique-visitors"
+				var visitorCountElement = document.getElementById("unique-visitors");
+				var currentVisitorCount = parseInt(visitorCountElement.textContent);
+		
+				// Increment the visitor count by 1 for each new visitor
+				var newVisitorCount = currentVisitorCount + 1;
+		
+				// Update the content of the element with the new visitor count
+				visitorCountElement.textContent = newVisitorCount;
 			}
-			
-			function setCookie(name, value, days) {
-				const expires = new Date();
-				expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-				document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
-			}
-			
-			// Function to count and display unique visitors
-			function countUniqueVisitors() {
-				const visitorCount = getCookie('unique_visitors') || 0;
-				const currentIP = getClientIP();
-			
-				// Check if the current IP has already been counted
-				if (!getCookie(`visited_${currentIP}`)) {
-					setCookie(`visited_${currentIP}`, true, 30); // Set a cookie to track this IP for 30 days
-					setCookie('unique_visitors', parseInt(visitorCount) + 1, 30); // Increment visitor count
-				}
-			
-				// Display the unique visitor count
-				const uniqueVisitorElement = document.getElementById('unique-visitors');
-				uniqueVisitorElement.textContent = getCookie('unique_visitors') || 0;
-			}
-			
-			// Function to get the client's IP address
-			function getClientIP() {
-				// This is a simplified example; in a production environment, you would use a server-side script to get the client's IP.
-				return '123.456.789.0'; // Replace this with a dynamic way to get the client's IP.
-			}
-			
-			// Call the function when the page loads
-			countUniqueVisitors();
-			</script>
-
-<div class="career-item">
-    <span class="icon"><i class="fa fa-users"></i></span>
-    <span class="career-desc">
-        <h2><span id="unique-visitors">0+</span> Followers</h2>
-        <p>Total Visitors</p>
-    </span>
-</div>
+		
+			// Call the updateVisitorCount function when the DOM is fully loaded
+			document.addEventListener("DOMContentLoaded", updateVisitorCount);
+		</script>
+		
+		
+		
 
 			
 	</div>
