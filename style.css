@@ -541,9 +541,17 @@ button.contact-btn{
 	left: -18px;
 }
 .resume-contents .box h4{
+	font-weight: 600;
 	position: relative;
 	color: var(--secondary-heading);
 }
+
+.tabbed {
+	padding-left: 20px;
+	display: inline-block;
+	font-weight: 500;
+}
+
 .resume-contents .box h3{
 	font-size: 19px;
 	padding: 10px 0px 6px;
