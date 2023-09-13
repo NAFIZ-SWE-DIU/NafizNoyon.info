@@ -85,31 +85,33 @@
 			</span>
 		</div>
 
-		<div class="career-item">
-			<span class="icon"><i class="fa fa-users"></i></span>
-			<span class="career-desc">
-				<h2><span id="unique-visitors">0</span>+ Followers</h2>
-				<p>Total Visitors</p>
-			</span>
-		</div>
-		
-		<script>
-			// Function to update the visitor count
-			function updateVisitorCount() {
-				// Get the current visitor count from the element with id "unique-visitors"
-				var visitorCountElement = document.getElementById("unique-visitors");
-				var currentVisitorCount = parseInt(visitorCountElement.textContent);
-		
-				// Increment the visitor count by 1 for each new visitor
-				var newVisitorCount = currentVisitorCount + 1;
-		
-				// Update the content of the element with the new visitor count
-				visitorCountElement.textContent = newVisitorCount;
-			}
-		
-			// Call the updateVisitorCount function when the DOM is fully loaded
-			document.addEventListener("DOMContentLoaded", updateVisitorCount);
-		</script>
+<!-- HTML -->
+<div class="career-item">
+    <span class="icon"><i class="fa fa-users"></i></span>
+    <span class="career-desc">
+        <h2><span id="unique-visitors">0</span> Followers</h2>
+        <p>Total Visitors</p>
+    </span>
+</div>
+
+<!-- JavaScript -->
+<script>
+    // Function to increment the count and update the HTML
+    function incrementPageViewCount() {
+        // Get the current count from the HTML
+        var countElement = document.getElementById("unique-visitors");
+        var currentCount = parseInt(countElement.textContent);
+        
+        // Increment the count
+        var newCount = currentCount + 1;
+        
+        // Update the HTML with the new count
+        countElement.textContent = newCount;
+    }
+    
+    // Call the function to increment the count when a page view occurs
+    incrementPageViewCount();
+</script>
 		
 		
 		
