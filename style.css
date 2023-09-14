@@ -223,13 +223,21 @@ button.contact-btn{
 	z-index: 0;
 }
 .hero .hero-image img{
-	position: absolute;
+	/* position: absolute;
 	width: auto;
 	height: auto;
 	object-fit: cover;
 	transform: rotate(-40deg);
 	left: 188px;
-	bottom: 200px;
+	bottom: 200px; */
+
+	position: absolute;
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    transform: rotate(-40deg);
+    left: 175px;
+    bottom: -60px;
 }
 .home .career-container{
 	position: relative;
