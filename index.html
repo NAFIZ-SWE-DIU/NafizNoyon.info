@@ -87,30 +87,38 @@
 
 <!-- HTML -->
 <div class="career-item">
-    <span class="icon"><i class="fa fa-users"></i></span>
-    <span class="career-desc">
-        <h2><span id="unique-visitors">170</span>+ Followers</h2>
-        <p>Total Visitors</p>
-    </span>
+	<span class="icon"><i class="fa fa-users"></i></span>
+	<span class="career-desc">
+		<h2><span id="unique-visitors">0</span>+ Visitors</h2>
+		<p>Total Followers</p>
+	</span>
 </div>
 
-<!-- JavaScript -->
 <script>
-    // Function to increment the count and update the HTML
-    function incrementPageViewCount() {
-        // Get the current count from the HTML
-        var countElement = document.getElementById("unique-visitors");
-        var currentCount = parseInt(countElement.textContent);
-        
-        // Increment the count
-        var newCount = currentCount + 1;
-        
-        // Update the HTML with the new count
-        countElement.textContent = newCount;
-    }
-    
-    // Call the function to increment the count when a page view occurs
-    incrementPageViewCount();
+	// Function to increment and display the visitor count
+	function incrementVisitorCount() {
+		// Check if local storage is supported
+		if (typeof(Storage) !== "undefined") {
+			// Get the current count from local storage, or initialize it to 0
+			let count = localStorage.getItem("visitorCount");
+			count = parseInt(count) || 0;
+
+			// Increment the count
+			count++;
+
+			// Update the count in local storage
+			localStorage.setItem("visitorCount", count);
+
+			// Display the count on the webpage
+			document.getElementById("unique-visitors").textContent = count;
+		} else {
+			// Local storage is not supported
+			console.log("Local storage is not supported.");
+		}
+	}
+
+	// Call the incrementVisitorCount function to update the count on page load
+	incrementVisitorCount();
 </script>
 		
 		
@@ -177,6 +185,8 @@
 		<h1>I Provide Awesome Services</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	</header>
+
+	
 	<!--   === Headings Text Ends ===   -->
 
 	<!--   === Services Box Container Starts ===   -->
