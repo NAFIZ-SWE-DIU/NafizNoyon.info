@@ -388,12 +388,14 @@ button.contact-btn{
 }
 .about-personal-info div{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: .3fr 1fr;
 }
 .about-personal-info div span{
 	color: var(--text-clr);
-	letter-spacing: 1px;
+	letter-spacing: 0px;
+	font-size: 15px;
 }
+
 .about-desc .download-btn{
 	border-radius: 25px;
 	margin-top: 25px;
