@@ -197,7 +197,7 @@ button.contact-btn{
 	max-width: 500px;
 	color: var(--links-clr);
 	margin: 15px 0px 35px;
-	line-height: 1.2;
+	line-height: 25px;
 }
 .hero .hero-text .hire-btn{
 	padding: 10px 35px;
@@ -376,6 +376,7 @@ button.contact-btn{
 .about .about-desc p{
 	font-size: 15px;
 	color: var(--text-clr);
+	line-height: 25px;
 }
 .about-desc .about-personal-info{
 	display: grid;
