@@ -409,6 +409,7 @@ button.contact-btn{
 	justify-content: space-between;
 	gap: 10px;
 }
+
 .services-container .service-box{
 	position: relative;
 	display: flex;
@@ -416,7 +417,7 @@ button.contact-btn{
 	justify-content: center;
 	align-items: flex-start;
 	flex-basis: 32%;
-	padding: 40px 40px 30px;
+	padding: 25px;
 	background-color: var(--bg-clr-one);
 	border: 1px solid var(--bg-clr-three);
 	border-radius: 5px;
@@ -426,13 +427,15 @@ button.contact-btn{
 	transition: 0.4s;
 	z-index: 1;
 }
+
 .service-box .icon-wrapper{
 	position: relative;
-	background-color: var(--primary-clr);
+	background-color: #fff;
 	font-size: 30px;
 	width: 55px;
 	height: 55px;
 	border-radius: 50%;
+	border: 2px solid #05555c;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -451,15 +454,17 @@ button.contact-btn{
 	font-size: 20px;
 	transition: 0.3s;
 }
+
 .service-box p{
 	color: var(--text-clr);
 	line-height: 1.3;
 	transition: 0.3s;
+	text-align: justify;
 }
 .service-box h3{
 	font-size: 16px;
 	color: var(--links-clr);
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .services-container .service-box::after{
 	position: absolute;
