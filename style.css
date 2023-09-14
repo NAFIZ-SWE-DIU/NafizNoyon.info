@@ -50,12 +50,14 @@ button.btn:hover{
     color: var(--links-clr);
     font-weight: bold;
 }
+
 .Website-container section.reusable .headings h1{
 	position: relative;
 	font-size: 25px;
 	margin: 10px 0px 15px;
 	color: var(--primary-clr);
 }
+
 .Website-container section.reusable .headings p{
 	font-size: 15px;
 	color: var(--text-clr);
@@ -1127,7 +1129,6 @@ button.contact-btn{
 		margin-bottom: 10px;
 	}
 }
-
 
 /*   === Screen Size 350px or Smaller  ===   */
 @media(max-width: 350px){
