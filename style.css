@@ -183,7 +183,7 @@ button.contact-btn{
 	content: '';
 	position: absolute;
 	height: 3px;
-	width: 40px;
+	width: 90px;
 	background-color: var(--primary-clr);
 	left: 0;
 	top: 110%;
@@ -513,6 +513,7 @@ button.contact-btn{
 .resume-contents .box{
 	position: relative;
 	padding: 20px;
+	margin-top: 10px;
 	border-bottom: 5px solid var(--bg-clr-one);
 	border-radius: 5px;
 	background-color: var(--primary-light-clr);
@@ -544,8 +545,10 @@ button.contact-btn{
 	font-weight: 600;
     position: relative;
     color: var(--secondary-heading);
-    display: block ruby;
-    margin-block-start: 1em;
+    /* display: block ruby; */
+	display: inline-block;
+    width: 100%;
+    margin: 4px;
 }
 
 .box h4 span{
@@ -1122,6 +1125,5 @@ button.contact-btn{
 		display: none;
 	}
 }
-
 
 /*   *** Media Query Ends ***   */
