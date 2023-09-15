@@ -39,6 +39,7 @@ button.btn:hover{
 .Website-container section.reusable{
 	width: 100%;
 	padding: 70px 8% 50px;
+	margin-top: 100px;
 }
 .Website-container section.reusable .headings{
 	max-width: 700px;
@@ -291,9 +292,9 @@ button.contact-btn{
 
 /*   *** About Section Styling Starts ***   */
 .about{
-	padding: 90px 8% 40px;
-	display: flex;
-	justify-content: space-between;
+	padding: 50px 8% 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .about .about-image{
 	position: relative;
