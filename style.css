@@ -403,8 +403,10 @@ button.contact-btn{
 }
 .about-personal-info div span{
 	color: var(--text-clr);
-	letter-spacing: 0px;
-	font-size: 15px;
+	letter-spacing: 1px;
+    border: 1px solid #3f7277;
+    padding: 5px;
+    text-align: left;
 }
 
 .about-desc .download-btn{
@@ -1137,7 +1139,6 @@ button.contact-btn{
 		margin-bottom: 10px;
 	}
 }
-
 
 /*   === Screen Size 350px or Smaller  ===   */
 @media(max-width: 350px){
