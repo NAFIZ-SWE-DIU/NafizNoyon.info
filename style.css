@@ -740,7 +740,6 @@ button.contact-btn{
 }
 .test-card-body .ratings i{
 	font-size: 17px;
-	color: var(--secondary-heading);
 	cursor: pointer;
 }
 .profile .profile-desc{
