@@ -306,6 +306,8 @@ button.contact-btn{
 .about .about-desc{
 	flex-basis: 65%;
 	margin-left: 6%;
+	background: #f6f9fe;
+    padding: 25px;
 }
 .about .about-image::before{
 	position: absolute;
