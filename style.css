@@ -1002,8 +1002,9 @@ button.contact-btn{
 	}
 }
 
+
 /*   === Screen Size 768px or Smaller  ===   */
-@media(max-width: 768px){
+@media(max-width: 1024px){
 	/* Home Section */
 	.navbar .menu-btn{
 		display: block;
