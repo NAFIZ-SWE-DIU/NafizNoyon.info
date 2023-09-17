@@ -121,9 +121,10 @@ body{
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 16px;
 	color: var(--links-clr);
 	transition: color 0.4s;
+	font-weight: bold;
 }
 .navbar ul.nav-links li a::after{
 	position: absolute;
